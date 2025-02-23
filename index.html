@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal Singh's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6875617418.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="side-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <img src="images/user.png" alt="Vishal Singh" class="profile-image">
+            <p>SOFTWARE Developer</p>
+            <h1>Hi, I'm <span>Vishal<br> From India</span></h1>
+            <img src="images/spiderman.png" alt="Spiderman" class="spiderman-animation">
+        </div>
+    </header>
+    
+    <section id="about">
+        <div class="container about-container">
+            <div class="about-col-1">
+                <img src="images/phonebackground.jpg" alt="Background" class="about-background">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am Vishal, 18 years old, an enthusiastic and self-taught software developer with a strong foundation in programming languages such as Python, JavaScript, C++, React, C, and Java. I have developed several projects such as web applications and mobile games, and I also have a strong hold on UI/UX design and VFX.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills"> 
+                    <ul>
+                        <li><span>Software Developer</span><br>Develop Web Applications</li>
+                        <li><span>UI/UX Designer</span><br>Designing Web Applications</li>
+                        <li><span>Game Developer</span><br>Developing Mobile Games</li>
+                        <li><span>Video Editor</span><br>Editing Videos</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022-2022</span><br>Worked as a software developer freelancer at Fiverr company</li>
+                        <li><span>2022-2023</span><br>Worked as a UI/UX Designer at ABC company</li>
+                        <li><span>2023-2024</span><br>Working as a web developer at PQR company</li>
+                        <li><span>2024-2025</span><br>WON HACKATHON AT SIH</li>
+                    </ul>
+                </div>
+            </div>
+        </div>     
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I can develop web applications using the latest technologies such as React, Angular, Node.js.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I can design web and mobile applications using Figma and Adobe XD.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-apple"></i>
+                    <h2>Game Development</h2>
+                    <p>I can develop mobile games using Unity and Unreal Engine.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-video"></i>
+                    <h2>Video Editing</h2>
+                    <p>I can edit videos using Adobe Premiere Pro and After Effects.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="Web Development">
+                    <div class="layer">
+                        <h2>Web Development</h2>
+                        <p>This app connects you to talented people around the world. Download it now and get connected.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="UI/UX Design">
+                    <div class="layer">
+                        <h2>UI/UX Design</h2>
+                        <p>UI/UX create some cool designs with this site.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="Game Development">
+                    <div class="layer">
+                        <h2>Game Development</h2>
+                        <p>Game Development create some cool games with this site.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-4.webp" alt="Video Editing">
+                    <div class="layer">
+                        <h2>Video Editing</h2>
+                        <p>Video Editing create some cool videos with this site.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:vishalsingh7vz@gmail.com">vishalsingh7vz@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i> <a href="tel:+917355091752">7355091752</a></p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/vishal7.z?igsh=Nml0aDA2NWRjb3Nz" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/vishalsingh7z?s=11" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="https://tenor.com/view/bhik-mangya-deepak-kalal-kya-dekh-raha-hai-bhikari-kya-re-bhikmanga-gif-24874935" class="cv-btn btn2" target="_blank">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <h1>Send Message</h1>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="copyright">
+        <p>Copyright © Vishal. Made with <i class="fa-solid fa-heart"></i> by Vishal</p>
+    </footer>
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemenu = document.getElementById("side-menu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzwWoTRNZeuU91MkRJQRaNf7tzy3sqV4-s029ghOVYcr4J5aBUNTImXwFFjkRjNCk6JpA/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
